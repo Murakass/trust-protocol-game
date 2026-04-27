@@ -221,7 +221,7 @@ func _ready() -> void:
 		SessionState.load_save_on_start = false
 		load_saved_game()
 	else:
-		begin_day(13)
+		begin_day(1)
 		update_datetime_label()
 	update_datetime_label()
 
