@@ -1,0 +1,311 @@
+[gd_scene format=3 uid="uid://03hpo6krncdf"]
+
+[ext_resource type="Texture2D" uid="uid://djlbahopj7cv" path="res://Assets/mainMenuBg.png" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://b37ye36qbhsqn" path="res://main_menu.gd" id="1_qe12f"]
+[ext_resource type="Texture2D" uid="uid://dgg4n30xnydt2" path="res://Assets/buttons/playIcon.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://b8dql7m5vu2cc" path="res://Assets/buttons/loadGameBtnIcon.png" id="2_glbon"]
+[ext_resource type="Script" uid="uid://b6l0oadvts023" path="res://menu_btn.gd" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://erepfcllv4wg" path="res://Assets/buttons/quitBtnIcon.png" id="3_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://j0uf1v5i1ih5" path="res://Assets/buttons/settingsBtnIcon.png" id="4_nlkkf"]
+[ext_resource type="Theme" uid="uid://01advpa83p45" path="res://general_ui_theme.tres" id="5_8qtwp"]
+[ext_resource type="FontFile" uid="uid://cxajck5f2ybsk" path="res://Assets/fonts/zig.regular.ttf" id="9_dy7ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glbon"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jix8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nlkkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qe12f"]
+
+[node name="MainMenu" type="Control" unique_id=1724441868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qe12f")
+
+[node name="BackgroundImage" type="Sprite2D" parent="." unique_id=200558136]
+position = Vector2(320, 180)
+texture = ExtResource("1_7vrkn")
+
+[node name="GameTitle" type="Label" parent="." unique_id=732474695]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="NewGameBtn" type="Button" parent="." unique_id=727218438]
+layout_mode = 1
+offset_left = 334.0
+offset_top = 126.0
+offset_right = 448.0
+offset_bottom = 162.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="NewGameBtn" unique_id=1725966342]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+
+[node name="Label" type="Label" parent="NewGameBtn" unique_id=880216839]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = -12.0
+offset_bottom = 11.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "New Game "
+horizontal_alignment = 2
+
+[node name="ContinueBtn" type="Button" parent="." unique_id=1699164292]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 334.0
+offset_top = -14.0
+offset_right = 448.0
+offset_bottom = 22.0
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jix8l")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="ContinueBtn" unique_id=1158587668]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("2_glbon")
+
+[node name="Label" type="Label" parent="ContinueBtn" unique_id=560363963]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -88.0
+offset_top = 4.0
+offset_bottom = 27.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Continue "
+horizontal_alignment = 2
+
+[node name="AudioBtn" type="Button" parent="." unique_id=106498038]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = -48.0
+offset_right = 134.0
+offset_bottom = -12.0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nlkkf")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="AudioBtn" unique_id=626767023]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("4_nlkkf")
+
+[node name="Label" type="Label" parent="AudioBtn" unique_id=562450511]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Audio: ON "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="RealityGameBtn" type="Button" parent="." unique_id=1386582162]
+visible = false
+layout_mode = 0
+offset_left = 490.0
+offset_top = 8.0
+offset_right = 632.0
+offset_bottom = 44.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="RealityGameBtn" unique_id=195132967]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+
+[node name="Label" type="Label" parent="RealityGameBtn" unique_id=1749395527]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -96.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Reality mode "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="OpenResultsBtn" type="Button" parent="." unique_id=1425784412]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 147.0
+offset_bottom = 41.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="OpenResultsBtn" unique_id=585908801]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+
+[node name="Label" type="Label" parent="OpenResultsBtn" unique_id=1722037669]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -104.0
+offset_top = 7.0
+offset_bottom = 30.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Download 
+proof File "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ClearResultsBtn" type="Button" parent="." unique_id=993416264]
+visible = false
+layout_mode = 0
+offset_left = 152.0
+offset_top = 4.0
+offset_right = 300.0
+offset_bottom = 40.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="ClearResultsBtn" unique_id=493160005]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+
+[node name="Label" type="Label" parent="ClearResultsBtn" unique_id=283536652]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_top = 7.0
+offset_right = 2.0
+offset_bottom = 30.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Clear results 
+data "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="QuitBtn" type="Button" parent="." unique_id=1797040677]
+visible = false
+layout_mode = 0
+offset_left = 14.0
+offset_top = 311.0
+offset_right = 94.0
+offset_bottom = 347.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qe12f")
+script = ExtResource("2_nlkkf")
+
+[node name="IconR" type="TextureRect" parent="QuitBtn" unique_id=2080648619]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 34.0
+offset_bottom = 16.0
+grow_vertical = 2
+texture = ExtResource("3_fu7sn")
+
+[node name="Label" type="Label" parent="QuitBtn" unique_id=1911331598]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme = ExtResource("5_8qtwp")
+theme_override_font_sizes/font_size = 10
+text = "Quit "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1926032123]
+layout_mode = 0
+offset_left = 333.0
+offset_top = 65.0
+offset_right = 373.0
+offset_bottom = 88.0
+theme_override_fonts/font = ExtResource("9_dy7ct")
+text = "Trust Protocol"

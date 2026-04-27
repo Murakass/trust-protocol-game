@@ -1,0 +1,9 @@
+[gd_resource type="Theme" format=3 uid="uid://bb8r3r0fom87a"]
+
+[ext_resource type="FontFile" uid="uid://h7r4cbepktch" path="res://Assets/fonts/cmuntb.ttf" id="1_touxu"]
+
+[resource]
+Button/colors/font_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+Button/fonts/font = ExtResource("1_touxu")
+Label/font_sizes/font_size = 18
+Label/fonts/font = ExtResource("1_touxu")

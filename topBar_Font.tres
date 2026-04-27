@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://ckshtjix1jgha"]
+
+[ext_resource type="FontFile" uid="uid://cxajck5f2ybsk" path="res://Assets/fonts/zig.regular.ttf" id="1_qktd7"]
+[ext_resource type="FontFile" uid="uid://j8q078mhd2bm" path="res://Assets/fonts/whitrabt.ttf" id="2_wp7o6"]
+
+[resource]
+default_font = ExtResource("2_wp7o6")
+Button/font_sizes/font_size = 18
+Button/fonts/font = ExtResource("1_qktd7")
+Label/font_sizes/font_size = 18
+Label/fonts/font = ExtResource("1_qktd7")
