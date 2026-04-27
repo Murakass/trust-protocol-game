@@ -119,10 +119,10 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 13.0
-offset_top = -48.0
-offset_right = 134.0
-offset_bottom = -12.0
+offset_left = 115.0
+offset_top = -49.0
+offset_right = 236.0
+offset_bottom = -13.0
 grow_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nlkkf")
 script = ExtResource("2_nlkkf")
@@ -150,42 +150,6 @@ grow_horizontal = 0
 theme = ExtResource("5_8qtwp")
 theme_override_font_sizes/font_size = 10
 text = "Audio: ON "
-horizontal_alignment = 2
-vertical_alignment = 1
-
-[node name="RealityGameBtn" type="Button" parent="." unique_id=1386582162]
-visible = false
-layout_mode = 0
-offset_left = 490.0
-offset_top = 8.0
-offset_right = 632.0
-offset_bottom = 44.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
-script = ExtResource("2_nlkkf")
-
-[node name="IconR" type="TextureRect" parent="RealityGameBtn" unique_id=195132967]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 2.0
-offset_top = -16.0
-offset_right = 34.0
-offset_bottom = 16.0
-grow_vertical = 2
-texture = ExtResource("2_fu7sn")
-
-[node name="Label" type="Label" parent="RealityGameBtn" unique_id=1749395527]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -96.0
-offset_bottom = 23.0
-grow_horizontal = 0
-theme = ExtResource("5_8qtwp")
-theme_override_font_sizes/font_size = 10
-text = "Reality mode "
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -226,47 +190,7 @@ proof File "
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="ClearResultsBtn" type="Button" parent="." unique_id=993416264]
-visible = false
-layout_mode = 0
-offset_left = 152.0
-offset_top = 4.0
-offset_right = 300.0
-offset_bottom = 40.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_glbon")
-script = ExtResource("2_nlkkf")
-
-[node name="IconR" type="TextureRect" parent="ClearResultsBtn" unique_id=493160005]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 2.0
-offset_top = -16.0
-offset_right = 34.0
-offset_bottom = 16.0
-grow_vertical = 2
-texture = ExtResource("2_fu7sn")
-
-[node name="Label" type="Label" parent="ClearResultsBtn" unique_id=283536652]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -110.0
-offset_top = 7.0
-offset_right = 2.0
-offset_bottom = 30.0
-grow_horizontal = 0
-theme = ExtResource("5_8qtwp")
-theme_override_font_sizes/font_size = 10
-text = "Clear results 
-data "
-horizontal_alignment = 2
-vertical_alignment = 1
-
 [node name="QuitBtn" type="Button" parent="." unique_id=1797040677]
-visible = false
 layout_mode = 0
 offset_left = 14.0
 offset_top = 311.0
